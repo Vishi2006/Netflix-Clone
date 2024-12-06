@@ -1,0 +1,897 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+#welcome-section {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0.3)), url(bg.jpg);
+    /* opacity: 0.5; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 10;
+}
+
+#logo-section {
+    z-index: 20;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    padding: 30px 0 0 0;
+    margin-bottom: 100px;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+    background-color: transparent;
+}
+
+#logo-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: transparent;
+}
+
+#language {
+    font-size: 20px;
+    height: 30px;
+    width: 110px;
+    padding: 2px 10px 2px 10px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.red-btn {
+    font-size: 20px;
+    height: 30px;
+    width: 100px;
+    padding: 2px 15px 2px 15px;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.red-btn:hover {
+    background-color: rgb(167, 21, 21);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#about {
+    background-color: transparent;
+    width: 50%;
+    height: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.span-one {
+    text-shadow: 2px 2px 10px black;
+    font-weight: 900;
+    font-size: 80px;
+    background-color: transparent;
+}
+
+.span-two {
+    text-shadow: 2px 2px 10px black;
+    margin-top: 20px;
+    background-color: transparent;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.span-three {
+    text-shadow: 2px 2px 10px black;
+    margin-top: 30px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#log-in {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color: transparent;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#email {
+    width: 40%;
+    height: auto;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.get {
+    padding: 10px 20px 10px 20px;
+    width: 25%;
+    font-size: 20px;
+    height: auto;
+    border: none;
+    outline: none;
+}
+
+#trending {
+    width: 100vw;
+    height: auto;
+    margin: 50px 0 70px 0;
+
+    h2 {
+        font-size: 35px;
+        font-weight: 900;
+        text-shadow: 1px 1px 3px rgb(153, 142, 142);
+    }
+}
+
+#trending-section {
+    width: 73%;
+    margin: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#trending-heading {
+    width: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+#trending-movies {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    flex-wrap: wrap;
+
+    img {
+        border-radius: 10px;
+        z-index: 0;
+        border: 0.5px solid white;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    span {
+        position: absolute;
+        top: 0px;
+        color: black;
+        text-shadow: 1px 1px 2px white;
+        font-size: 75px;
+        background-color: transparent;
+        z-index: 5;
+    }
+}
+
+
+
+#marval {
+    width: 100vw;
+    height: auto;
+    margin: 50px 0 70px 0;
+
+    h2 {
+        font-size: 35px;
+        font-weight: 900;
+        text-shadow: 1px 1px 3px rgb(153, 142, 142);
+    }
+}
+
+#marval-section {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#marval-heading {
+    /* width: 30% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#marval-img {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        border-radius: 3px;
+        object-fit: cover;
+        border: 1px solid white;
+        width: 15%;
+        height: 400px;
+        cursor: pointer;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+        width: 22%;
+        transition: all ease-in-out 0.4;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px white;
+    }
+}
+
+.marval-btn {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 400px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.marval-btn:hover {
+    background-color: rgb(167, 21, 21);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#more-reason {
+    width: 100vw;
+    height: auto;
+    margin: 50px 0 50px 0;
+
+    h2 {
+        margin: 0 0 20px 13%;
+        font-size: 33px;
+        font-weight: 900;
+        text-shadow: 1px 1px 3px rgb(153, 142, 142);
+    }
+}
+
+#more-blocks {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.mores {
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 20px 10px 20px 10px;
+    border: 1px solid gray;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.mores p {
+    margin-left: 10px;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.mores:hover {
+    box-shadow: 2px 2px 5px white;
+}
+
+#faqs {
+    width: 100vw;
+    height: auto;
+    margin: 50px 0 50px 0;
+
+    h2 {
+        margin: 0 0 30px 15%;
+        font-size: 33px;
+        font-weight: 900;
+        text-shadow: 1px 1px 3px rgb(153, 142, 142);
+    }
+}
+
+#faq-blocks {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    p {
+        width: 72%;
+        height: auto;
+        color: rgb(212, 207, 207);
+        background-color: transparent;
+        display: none;
+    }
+
+    #normal-p {
+        opacity: 1;
+        color: white;
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+}
+
+.FAQ {
+    width: 72%;
+    padding: 5px 0 5px 15px;
+    height: 60px;
+    font-size: 21px;
+    border-radius: 15px;
+    background-color: rgb(40, 40, 40);
+
+}
+
+.FAQ:hover {
+    background-color: rgb(65, 65, 65);
+
+}
+
+.FAQ:hover+#p-one {
+    display: block;
+}
+
+.FAQ:hover+#p-two {
+    display: block;
+}
+
+.FAQ:hover+#p-three {
+    display: block;
+}
+
+.FAQ:hover+#p-four {
+    display: block;
+
+}
+
+.FAQ:hover+#p-five {
+
+    display: block;
+}
+
+.FAQ:hover+#p-six {
+    display: block;
+}
+
+.final-get {
+    font-size: 25px;
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    padding: 2px 15px 2px 15px;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.final-get:hover {
+    background-color: rgb(167, 21, 21);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+footer {
+    width: 70vw;
+    height: auto;
+    font-size: 20px;
+    margin: 100px auto;
+    /* margin: auto; */
+}
+
+#footer-tags {
+    width: 100%;
+    height: auto;
+    margin: 30px 0 30px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    div {
+        width: 20%;
+        height: auto;
+        color: rgb(65, 65, 65);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #logo {
+        width: 160px;
+    }
+
+    #language {
+        font-size: 15px;
+        height: 25px;
+        width: 90px;
+    }
+
+    .red-btn {
+        font-size: 15px;
+        height: 25px;
+        width: 90px;
+    }
+
+    #about {
+        width: 70%;
+    }
+
+    .span-one {
+        font-size: 60px;
+    }
+
+    .span-two {
+        margin-top: 15px;
+        font-size: 23px;
+    }
+
+    .span-three {
+        margin-top: 25px;
+        font-size: 13px;
+    }
+
+    #log-in {
+        width: 100%;
+        margin-top: 15px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #email {
+        width: 40%;
+        height: auto;
+        font-size: 20px;
+    }
+
+    .get {
+        width: 30%;
+        height: auto;
+        font-size: 18px;
+    }
+
+    #logo-section {
+        padding-top: 50px;
+        margin-bottom: 70px;
+    }
+
+    #trending {
+        margin: 35px 0 50px 0;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    #trending-section {
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    #trending-heading {
+        width: 25%;
+        gap: 30px;
+    }
+
+    #trending-movies {
+        width: 90%;
+        margin-top: 30px;
+        gap: 20px;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    #marval {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    #marval-section {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    #marval-heading {
+        font-size: 20px;
+    }
+
+    #marval-img {
+        margin-top: 30px;
+        gap: 10px;
+
+        img {
+            width: 15%;
+            height: 250px;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            width: 22%;
+        }
+    }
+
+    #marval-btn {
+        margin-top: 20px;
+        font-size: 20px;
+        width: 100px;
+    }
+
+    #more-reason {
+        margin: 40px 0 40px 0;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    #more-blocks {
+        width: 83%;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .mores {
+        width: 180px;
+        height: 250px;
+        margin: 15px 8px 15px 8px;
+    }
+
+    .mores p {
+        font-size: 22px;
+    }
+
+    #faqs {
+        width: 100vw;
+        margin: 40px 0 40px 0;
+
+        h2 {
+            font-size: 29px;
+        }
+    }
+
+    #faq-blocks {
+        width: 100%;
+        gap: 8px;
+        font-size: 18px;
+
+        p {
+            width: 90%;
+            font-size: 15px;
+        }
+
+        #normal-p {
+            font-size: 15px;
+        }
+    }
+
+    .FAQ {
+        width: 90%;
+        padding: 5px 0 5px 10px;
+        height: 40px;
+
+    }
+
+    .final-get {
+        font-size: 20px;
+        height: 35px;
+        width: 200px;
+        margin-top: 10px;
+        padding: 2px 10px 2px 10px;
+    }
+
+    footer {
+        width: 90vw;
+        font-size: 15px;
+        margin: 80px auto;
+    }
+
+    #footer-tags {
+        width: 100%;
+        margin: 20px 0 20px 0;
+        gap: 10px;
+
+        div {
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+
+}
+
+@media (max-width: 500px) {
+    #logo {
+        width: 180px;
+    }
+
+    #language {
+        font-size: 15px;
+        height: 25px;
+        width: 90px;
+    }
+
+    .red-btn {
+        font-size: 15px;
+        height: 25px;
+        width: 90px;
+    }
+
+    .span-one {
+        font-size: 45px;
+    }
+
+    .span-two {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .span-three {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    #log-in {
+        width: 100%;
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #email {
+        width: 50%;
+        height: auto;
+        font-size: 20px;
+    }
+
+    .get {
+        width: 60%;
+        height: auto;
+        font-size: 10px;
+    }
+
+    #logo-section {
+        padding-top: 50px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #trending {
+        margin: 30px 0 30px 0;
+
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+    #trending-section {
+        width: 90%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #trending-heading {
+        width: 70%;
+        gap: 30px;
+    }
+
+    #trending-movies {
+        width: 90%;
+        margin-top: 30px;
+        gap: 20px;
+
+        img {
+            width: 90px;
+        }
+    }
+
+    #marval {
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+    #marval-section {
+        width: 90%;
+        font-size: 20px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #marval-img {
+        margin-top: 25px;
+        flex-direction: column;
+        gap: 10px;
+
+        img {
+            width: 40%;
+            height: 200px;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            width: 50%;
+        }
+    }
+
+    #marval-btn {
+        margin-top: 20px;
+        font-size: 20px;
+        width: 100px;
+    }
+
+    #more-reason {
+        margin: 40px 0 40px 0;
+
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+    #more-blocks {
+        width: 85%;
+        flex-direction: column;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+
+    .mores {
+        width: 200px;
+        height: 200px;
+        margin: 15px 8px 15px 8px;
+    }
+
+    .mores p {
+        font-size: 19px;
+    }
+
+    #faqs {
+        width: 100vw;
+        margin: 30px 0 30px 0;
+
+        h2 {
+            font-size: 23px;
+        }
+    }
+
+    #faq-blocks {
+        gap: 8px;
+        font-size: 15px;
+
+        p {
+            width: 90%;
+            font-size: 14px;
+        }
+
+        #normal-p {
+            font-size: 14px;
+        }
+    }
+
+    .FAQ {
+        width: 90%;
+        padding: 5px 0 5px 10px;
+        height: 40px;
+
+    }
+
+    .final-get {
+        font-size: 18px;
+        height: 50px;
+        width: 110px;
+    }
+
+    footer {
+        width: 90vw;
+        font-size: 15px;
+        margin: 50px;
+        text-align: center;
+    }
+
+    #footer-tags {
+        width: 100%;
+        margin: 15px 0 15px 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        div {
+            width: 50%;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+    }
+}
